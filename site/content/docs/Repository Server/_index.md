@@ -51,8 +51,8 @@ KOPIA_PASSWORD="<password-for-the-repository>" \
 KOPIA_SERVER_CONTROL_PASSWORD="<server-control-password>" \
   kopia server start \
     --tls-generate-cert \
-    --tls-cert-file ~/my.cert \
-    --tls-key-file ~/my.key \
+    --tls-cert-file=~/my.cert \
+    --tls-key-file=~/my.key \
     --address 0.0.0.0:51515 \
     --server-control-username control
 ```
